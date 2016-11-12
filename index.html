@@ -28,7 +28,7 @@
     
     <script src="jquery.js"></script>
     <script>
-      $(function() {
+      $(document).ready(function() {
         // Dissimulation des réponses
         $('.reponse').hide();
         
@@ -37,9 +37,9 @@
 
         
         // Action au survol du lien « Tester les réponses »
-        $('#button').hover(
+        $('button').click(
           function() {
-            $('.reponse').show();
+            $('.reponse').toggle(1000);
             if ($(':radio[id="r1"]:checked').val()) {
               $('#img1').attr('src', 'bon.png').addClass( "fadeIn" ); 
               $('#reponse1').css('color', 'green');
@@ -117,13 +117,7 @@
               $('#img8').attr('src', 'mauvais.png').addClass( "fadeIn" );
               $('#reponse8').css('color', 'red');
             }
-          },
-          function() { 
-            $('.reponse').hide(); 
-            $('img').each(function() {
-              $(this).attr('src', 'question.png');
-          });
-}
+          }
 
         );  
       }); 
