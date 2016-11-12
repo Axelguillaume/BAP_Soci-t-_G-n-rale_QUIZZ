@@ -18,13 +18,13 @@
         <input type="radio" id="r3" name="q1">Tantôt dans le navigateur, tantôt sur le serveur<br>
         <br><span class="reponse" id="reponse1">Réponse 1 :Le code jQuery n'est autre que du JavaScript. À ce titre, il s'exécute toujours sur les clients (ordinateurs, tablettes et téléphones) qui font référence à ce code via une page HTML. La bonne réponse est donc la première.</span>
       </div>  
-      <img id="img1" src="question.png" />
+      <img id="img1" src="recherche.png" />
     </div>
 
     
 	
     </form>
-	<center><button class="btn">Réponses</button></center>
+	<center><button id="button" class="btn">Réponses</button></center>
     
     <script src="jquery.js"></script>
     <script>
@@ -38,12 +38,12 @@
         
         // Action au survol du lien « Tester les réponses »
         $('button').hover(
-          function() { 
+          function() {
             $('.reponse').show();
             if ($(':radio[id="r1"]:checked').val()) {
               $('#img1').attr('src', 'bon.png'); 
               $('#reponse1').css('color', 'green');
-            }  
+            }
             else {
               $('#img1').attr('src', 'mauvais.png');
               $('#reponse1').css('color', 'red');
@@ -121,7 +121,7 @@
           function() { 
             $('.reponse').hide(); 
             $('img').each(function() {
-              $(this).attr('src', 'question.png');
+              $(this).attr('src', 'recherche.png');
           });
 }
 
