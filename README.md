@@ -1,1 +1,0 @@
-BAP_Societe_Generale_QUIZZ

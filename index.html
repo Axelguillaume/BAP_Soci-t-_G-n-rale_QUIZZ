@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Questionnaire interactif en jQuery</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  
+  <body>
+	<div class="header">
+		<form id="contactform" action="#" method="POST" enctype="multipart/form-data">
+				<label for="name"><h2>Nom:</h2></label>
+				<input id="name" class="input" name="name" type="text" value="" size="30" />
+				<label for="email"><h2>Prénom:</h2></label>
+				<input id="email" class="input" name="email" type="text" value="" size="30" />
+				<label for="email"><h2>Groupe:</h2></label>
+				<input id="email" class="input" name="email" type="text" value="" size="3" />
+		</form>						
+	</div>
+    <form>
+    <div class="question">
+      <div class="texte">
+        <h2>Question 1</h2>
+          <h4>Lorsque l'on veut exécuter du code jQuery, attendre la disponibilité du DOM est :</h4>
+          <input type="radio" id="r1" name="q1">Dans le navigateur<br>
+          <input type="radio" id="r2" name="q1">Sur le serveur où est stocké le code<br>
+        <input type="radio" id="r3" name="q1">Tantôt dans le navigateur, tantôt sur le serveur<br>
+        <br><span class="reponse" id="reponse1">Réponse 1 :Le code jQuery n'est autre que du JavaScript. À ce titre, il s'exécute toujours sur les clients (ordinateurs, tablettes et téléphones) qui font référence à ce code via une page HTML. La bonne réponse est donc la première.</span>
+      </div>  
+      <img id="img1" src="question.png" />
+    </div>
+
+    <div class="question">
+      <div class="texte">
+        <h2>Question 2</h2>
+        <h4>Lorsque l'on veut exécuter du code jQuery, attendre la disponibilité du DOM est :</h4>
+        <input type="radio" id="r4" name="q2">Vital<br>
+        <input type="radio" id="r5" name="q2">Inutile<br>
+        <input type="radio" id="r6" name="q2">Parfois important, parfois sans importance<br>
+        <br><span class="reponse" id="reponse2">Réponse 1 :Il est impératif d'attendre la disponibilité du DOM avant d'exécuter du code jQuery. Sans quoi, ce code pourrait s'appliquer à un élément indisponible et provoquer un comportement inattendu, voire même un plantage du navigateur.</span>
+      </div>
+      <img id="img2" src="question.png" />
+    </div>
+
+    <div class="question">
+      <div class="texte">
+        <h2>Question 3</h2>
+        <h4>Lorsque l'on veut exécuter du code jQuery, attendre la disponibilité du DOM est :</h4>
+        <input type="radio" id="r7" name="q3">Il faut les mettre l'une à la suite de l'autre en les séparant par une virgule<br>
+        <input type="radio" id="r8" name="q3">Il faut les mettre l'une à la suite de l'autre en les séparant par un point décimal<br>
+        <input type="radio" id="r9" name="q3">Il est impossible de chaîner deux méthodes jQuery<br>
+        <br><span class="reponse" id="reponse3">Réponse 2: L'exécution d'un sélecteur jQuery produit un objet jQuery sur lequel il est possible d'appliquer une méthode jQuery. Cette méthode produit elle-même un objet jQuery. Il est donc possible de lui appliquer une autre méthode en utilisant le caractère de liaison habituel : le point décimal.</span>
+      </div>  
+      <img id="img3" src="question.png" />
+    </div>
+	
+	<div class="question">
+      <div class="texte">
+        <h2>Question 4</h2>
+        <h4>Lorsque l'on veut exécuter du code jQuery, attendre la disponibilité du DOM est :</h4>
+        <input type="radio" id="r10" name="q4">Il faut les mettre l'une à la suite de l'autre en les séparant par une virgule<br>
+        <input type="radio" id="r11" name="q4">Il faut les mettre l'une à la suite de l'autre en les séparant par un point décimal<br>
+        <input type="radio" id="r12" name="q4">Il est impossible de chaîner deux méthodes jQuery<br>
+        <br><span class="reponse" id="reponse4">Réponse 3: L'exécution d'un sélecteur jQuery produit un objet jQuery sur lequel il est possible d'appliquer une méthode jQuery. Cette méthode produit elle-même un objet jQuery. Il est donc possible de lui appliquer une autre méthode en utilisant le caractère de liaison habituel : le point décimal.</span>
+      </div>  
+      <img id="img4" src="question.png" />
+    </div>
+	
+	<div class="question">
+      <div class="texte">
+        <h2>Question 5</h2>
+        <h4>Lorsque l'on veut exécuter du code jQuery, attendre la disponibilité du DOM est :</h4>
+        <input type="radio" id="r13" name="q5">Il faut les mettre l'une à la suite de l'autre en les séparant par une virgule<br>
+        <input type="radio" id="r14" name="q5">Il faut les mettre l'une à la suite de l'autre en les séparant par un point décimal<br>
+        <input type="radio" id="r15" name="q5">Il est impossible de chaîner deux méthodes jQuery<br>
+        <br><span class="reponse" id="reponse5">Réponse 3 :L'exécution d'un sélecteur jQuery produit un objet jQuery sur lequel il est possible d'appliquer une méthode jQuery. Cette méthode produit elle-même un objet jQuery. Il est donc possible de lui appliquer une autre méthode en utilisant le caractère de liaison habituel : le point décimal.</span>
+      </div>  
+      <img id="img5" src="question.png" />
+    </div>
+	
+	<div class="question">
+      <div class="texte">
+        <h2>Question 6</h2>
+        <h4>Lorsque l'on veut exécuter du code jQuery, attendre la disponibilité du DOM est :</h4>
+        <input type="radio" id="r16" name="q6">Il faut les mettre l'une à la suite de l'autre en les séparant par une virgule<br>
+        <input type="radio" id="r17" name="q6">Il faut les mettre l'une à la suite de l'autre en les séparant par un point décimal<br>
+        <input type="radio" id="r18" name="q6">Il est impossible de chaîner deux méthodes jQuery<br>
+        <br><span class="reponse" id="reponse6">Réponse 3 : L'exécution d'un sélecteur jQuery produit un objet jQuery sur lequel il est possible d'appliquer une méthode jQuery. Cette méthode produit elle-même un objet jQuery. Il est donc possible de lui appliquer une autre méthode en utilisant le caractère de liaison habituel : le point décimal.</span>
+      </div>  
+      <img id="img6" src="question.png" />
+    </div>
+	
+	<div class="question">
+      <div class="texte">
+        <h2>Question 7</h2>
+        <h4>Lorsque l'on veut exécuter du code jQuery, attendre la disponibilité du DOM est :</h4>
+        <input type="radio" id="r19" name="q7">Il faut les mettre l'une à la suite de l'autre en les séparant par une virgule<br>
+        <input type="radio" id="r20" name="q7">Il faut les mettre l'une à la suite de l'autre en les séparant par un point décimal<br>
+        <input type="radio" id="r21" name="q7">Il est impossible de chaîner deux méthodes jQuery<br>
+        <br><span class="reponse" id="reponse7">Réponse 3: L'exécution d'un sélecteur jQuery produit un objet jQuery sur lequel il est possible d'appliquer une méthode jQuery. Cette méthode produit elle-même un objet jQuery. Il est donc possible de lui appliquer une autre méthode en utilisant le caractère de liaison habituel : le point décimal.</span>
+      </div>  
+      <img id="img7" src="question.png" />
+    </div>
+	
+	<div class="question">
+      <div class="texte">
+        <h2>Question 8</h2>
+        <h4>Lorsque l'on veut exécuter du code jQuery, attendre la disponibilité du DOM est :</h4>
+        <input type="radio" id="r22" name="q8">Il faut les mettre l'une à la suite de l'autre en les séparant par une virgule<br>
+        <input type="radio" id="r23" name="q8">Il faut les mettre l'une à la suite de l'autre en les séparant par un point décimal<br>
+        <input type="radio" id="r24" name="q8">Il est impossible de chaîner deux méthodes jQuery<br>
+        <br><span class="reponse" id="reponse8">Réponse 3 : L'exécution d'un sélecteur jQuery produit un objet jQuery sur lequel il est possible d'appliquer une méthode jQuery. Cette méthode produit elle-même un objet jQuery. Il est donc possible de lui appliquer une autre méthode en utilisant le caractère de liaison habituel : le point décimal.</span>
+      </div>  
+      <img id="img8" src="question.png" />
+    </div>
+	
+    </form>
+	<center><button class="btn">Réponses</button></center>
+    
+    <script src="jquery.js"></script>
+    <script>
+      $(function() {
+        // Dissimulation des réponses
+        $('.reponse').hide();
+        
+        // Mise en forme des div du QCM
+        var q = $('.question');
+
+        
+        // Action au survol du lien « Tester les réponses »
+        $('button').hover(
+          function() { 
+            $('.reponse').show();
+            if ($(':radio[id="r1"]:checked').val()) {
+              $('#img1').attr('src', 'bon.png'); 
+              $('#reponse1').css('color', 'green');
+            }  
+            else {
+              $('#img1').attr('src', 'mauvais.png');
+              $('#reponse1').css('color', 'red');
+            } 
+			
+			
+            if ($(':radio[id="r4"]:checked').val()) {
+              $('#img2').attr('src', 'bon.png');
+              $('#reponse2').css('color', 'green');
+            }
+            else {
+              $('#img2').attr('src', 'mauvais.png');
+              $('#reponse2').css('color', 'red');
+            } 
+            
+			
+			if ($(':radio[id="r8"]:checked').val()) {
+              $('#img3').attr('src', 'bon.png'); 
+              $('#reponse3').css('color', 'green');
+            }
+            else {
+              $('#img3').attr('src', 'mauvais.png');
+              $('#reponse3').css('color', 'red');
+            }
+			
+			
+			if ($(':radio[id="r12"]:checked').val()) {
+              $('#img4').attr('src', 'bon.png'); 
+              $('#reponse4').css('color', 'green');
+            }
+            else {
+              $('#img4').attr('src', 'mauvais.png');
+              $('#reponse4').css('color', 'red');
+            }
+			
+			
+			if ($(':radio[id="r15"]:checked').val()) {
+              $('#img5').attr('src', 'bon.png'); 
+              $('#reponse5').css('color', 'green');
+            }
+            else {
+              $('#img5').attr('src', 'mauvais.png');
+              $('#reponse5').css('color', 'red');
+            }
+			
+			
+			if ($(':radio[id="r18"]:checked').val()) {
+              $('#img6').attr('src', 'bon.png'); 
+              $('#reponse6').css('color', 'green');
+            }
+            else {
+              $('#img6').attr('src', 'mauvais.png');
+              $('#reponse6').css('color', 'red');
+            }
+			
+			if ($(':radio[id="r21"]:checked').val()) {
+              $('#img7').attr('src', 'bon.png'); 
+              $('#reponse7').css('color', 'green');
+            }
+            else {
+              $('#img7').attr('src', 'mauvais.png');
+              $('#reponse7').css('color', 'red');
+            }
+			
+			
+			if ($(':radio[id="r24"]:checked').val()) {
+              $('#img8').attr('src', 'bon.png'); 
+              $('#reponse8').css('color', 'green');
+            }
+            else {
+              $('#img8').attr('src', 'mauvais.png');
+              $('#reponse8').css('color', 'red');
+            }
+          },
+          function() { 
+            $('.reponse').hide(); 
+            $('img').each(function() {
+              $(this).attr('src', 'question.png');
+          });
+}
+
+        );  
+      }); 
+    </script>    
+  </body>
+</html>
+
