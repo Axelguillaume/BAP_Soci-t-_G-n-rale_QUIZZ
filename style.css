@@ -31,7 +31,7 @@ body {
 	background: rgba(0, 0, 0, 0.4);
     border: 1px solid black;
     width: 1200px;
-    height: 800px;
+    height: 500px;
 	font-family: 'Titillium Web', sans-serif;
 	-moz-box-shadow: 5px 5px 10px 0px #656565;
 	-webkit-box-shadow: 5px 5px 10px 0px #656565;
@@ -45,14 +45,11 @@ body {
 }
 
 img {
-    margin: 80px 20px 0px 0px;
-
-
+    margin: 40px 80px;
 }
 
 .texte{
-	margin: 20px 0px 0px 20px;
-	width: 50%;
+	margin: 120px 0px 0px 100px;
 	float: left;
 }
 
