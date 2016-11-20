@@ -5,8 +5,7 @@
     <title>Questionnaire interactif en jQuery</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
 
-
-      <script type="text/javascript">
+  <script type="text/javascript">
       function getScore(formulaire) 
       {
         var score = 0;
@@ -53,7 +52,7 @@
     <div class="question">
       <div class="texte">
        <fieldset id="Q2">
-        <h2>Question 1</h2>
+        <h2>Question 2</h2>
         <h4>Lorsque l'on veut exécuter du code jQuery, attendre la disponibilité du DOM est :</h4>
         <input type="radio" value="1" id="r5" name="q2">Dans le navigateur<br>
         <input type="radio" value="-1" id="r6" name="q2">Sur le serveur où est stocké le code<br>
@@ -68,7 +67,7 @@
     <div class="question">
       <div class="texte">
        <fieldset id="Q3">
-        <h2>Question 1</h2>
+        <h2>Question 3</h2>
         <h4>Lorsque l'on veut exécuter du code jQuery, attendre la disponibilité du DOM est :</h4>
         <input type="radio" value="1" id="r9" name="q3">Dans le navigateur<br>
         <input type="radio" value="-1" id="r10" name="q3">Sur le serveur où est stocké le code<br>
@@ -83,13 +82,12 @@
     <div class="question">
       <div class="texte">
        <fieldset id="Q4">
-           <button  id="hide2" class="btn">50/50</button>
-        <h2>Question 1</h2>
+        <h2>Question 4</h2>
         <h4>Lorsque l'on veut exécuter du code jQuery, attendre la disponibilité du DOM est :</h4>
         <input type="radio" value="1" id="r13" name="q4">Dans le navigateur<br>
-        <span class="r14"><input type="radio" value="-1" id="r14" name="q4">Sur le serveur où est stocké le code<br></span>
+        <input type="radio" value="-1" id="r14" name="q4">Sur le serveur où est stocké le code<br>
         <input type="radio" value="-1" id="r15" name="q4">Tantôt dans le navigateur, tantôt sur le serveur<br>
-        <span class="r14"><input type="radio" value="-1" id="r16" name="q4">Tantôt dans le navigateur, tantôt en ligne<br></span>
+        <input type="radio" value="-1" id="r16" name="q4">Tantôt dans le navigateur, tantôt en ligne<br>
         <br><span class="reponse" id="reponse4">Réponse 1 :Le code jQuery n'est autre que du JavaScript. À ce titre, il s'exécute toujours sur les clients (ordinateurs, tablettes et téléphones) qui font référence à ce code via une page HTML. La bonne réponse est donc la première.</span>
          </fieldset>
       </div>  
@@ -102,7 +100,6 @@
   <center>Votre score est : <span id="score"></span><center>
     
     <script src="jquery.js"></script>
-
     <script>
       $(document).ready(function() {
         // Dissimulation des réponses
@@ -197,37 +194,7 @@
 
         );  
       }); 
-    </script>
-      <script>
-          $(document).ready(function() {
-                  $('.r14').hide();
-                  $('.r16').hide();
-          });
-      </script>
-      <script src="js/lib/jquery-backward-timer.min.js"></script>
-
-      <div class='timer_block'>
-          <div class='controls'>
-              <a href="javascript:void(0)" class="start_btn" id='start_0'>Start</a>
-              <a href="javascript:void(0)" class="cancel_btn" id='cancel_0'>Cancel</a>
-              <a href="javascript:void(0)" class="reset_btn" id='reset_0'>Reset</a>
-          </div>
-          <span id='timer_0' class='timer'>value placeholder</span>
-
-          <script type="text/javascript">
-              $('#timer_0').backward_timer()
-
-              $('#start_0').click(function() {
-                  $('#timer_0').backward_timer('start')
-              })
-              $('#cancel_0').click(function() {
-                  $('#timer_0').backward_timer('cancel')
-              })
-              $('#reset_0').click(function() {
-                  $('#timer_0').backward_timer('reset')
-              })
-          </script>
-      </div>
+    </script>    
   </body>
 </html>
 
