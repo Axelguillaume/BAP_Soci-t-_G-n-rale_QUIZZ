@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title></title>
+	<style>
+		.bird{
+			height:10px;
+			width:10px;
+
+			background-color:black;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$('body').children().css('left','+=90');
+			if( parseInt($('.hj').css('left')) > 95){
+				console.log('>10');
+			}
+			console.log( $('.hj').css('left'));
+			
+			console.log($('.bird'));
+
+		});
+	</script>
+</head>
+<body>
+	<div class="bird hj" style="position:absolute; left:5; top:100"></div>
+	<div class="bird" style="position:absolute; left:5; top:120"></div>
+	<div class="bird" style="position:absolute; left:5; top:130"></div>
+	<div class="bird" style="position:absolute; left:10; top:40"></div>
+	<div class="bird" style="position:absolute; left:5; top:100"></div>
+	<div class="bird" style="position:absolute; left:5; top:100"></div>
+	<div class="bird" style="position:absolute; left:5; top:100"></div>
+	<div class="bird" style="position:absolute; left:5; top:100"></div>
+	<div class="bird" style="position:absolute; left:5; top:100"></div>
+	<div class="bird" style="position:absolute; left:5; top:100"></div>
+	<div class="bird" style="position:absolute; left:5; top:100"></div>
+	<div class="bird" style="position:absolute; left:5; top:100"></div>
+</body>
+</html>
