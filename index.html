@@ -194,7 +194,30 @@
 
         );  
       }); 
-    </script>    
+    </script>
+      <script src="js/lib/jquery-backward-timer.min.js"></script>
+
+      <div class='timer_block'>
+          <div class='controls'>
+              <a href="javascript:void(0)" class="start_btn" id='start_0'>Start</a>
+              <a href="javascript:void(0)" class="cancel_btn" id='cancel_0'>Cancel</a>
+              <a href="javascript:void(0)" class="reset_btn" id='reset_0'>Reset</a>
+          </div>
+          <span id='timer_0' class='timer'>value placeholder</span>
+
+          <script type="text/javascript">
+              $('#timer_0').backward_timer()
+
+              $('#start_0').click(function() {
+                  $('#timer_0').backward_timer('start')
+              })
+              $('#cancel_0').click(function() {
+                  $('#timer_0').backward_timer('cancel')
+              })
+              $('#reset_0').click(function() {
+                  $('#timer_0').backward_timer('reset')
+              })
+          </script>
   </body>
 </html>
 
