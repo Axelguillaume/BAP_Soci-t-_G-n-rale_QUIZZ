@@ -33,21 +33,22 @@
   
   <body>
 	
-    <form>
+  <form>
     <div class="question">
       <div class="texte">
        <fieldset id="Q1">
         <h2>Question 1</h2>
         <h4>Lorsque l'on veut exécuter du code jQuery, attendre la disponibilité du DOM est :</h4>
-        <input type="radio" value="1" id="r1" name="q1">Dans le navigateur<br>
-        <input type="radio" value="-1" id="r2" name="q1">Sur le serveur où est stocké le code<br>
-        <input type="radio" value="-1" id="r3" name="q1">Tantôt dans le navigateur, tantôt sur le serveur<br>
-        <input type="radio" value="-1" id="r4" name="q1">Tantôt dans le navigateur, tantôt en ligne<br>
+        <p id="r1"><input type="radio" value="1" id="r1" name="q1">Dans le navigateur</p>
+        <p id="r2"><input type="radio" value="-1" id="r2" name="q1">Sur le serveur où est stocké le code</p>
+        <p id="r3"><input type="radio" value="-1" id="r3" name="q1">Tantôt dans le navigateur, tantôt sur le serveur</p>
+        <p id="r4"><input type="radio" value="-1" id="r4" name="q1">Tantôt dans le navigateur, tantôt en ligne</p>
         <br><span class="reponse" id="reponse1">Réponse 1 :Le code jQuery n'est autre que du JavaScript. À ce titre, il s'exécute toujours sur les clients (ordinateurs, tablettes et téléphones) qui font référence à ce code via une page HTML. La bonne réponse est donc la première.</span>
          </fieldset>
       </div>  
       <img id="img1" src="question.png" />
     </div>
+   <button id="q1_50" onclick="aleatoire_01()">50/50</button>
 
     <div class="question">
       <div class="texte">
@@ -93,11 +94,14 @@
       </div>  
       <img id="img4" src="question.png" />
     </div>
+  </form>
     
-    </form>
-	<center><button value="Score" onclick="getScore(this.form)" id="button" class="btn">Réponses</button></center>
+ 
+	<center><button value="Score" onclick="getScore(this.form)" id="button_rep" class="btn">Réponses</button></center>
   <br>
   <center>Votre score est : <span id="score"></span><center>
+
+
     
     <script src="jquery.js"></script>
     <script>
@@ -110,7 +114,7 @@
 
         
         // Action au survol du lien « Tester les réponses »
-        $('button').click(
+        $('#button_rep').click(
           function() {
             $('.reponse').toggle(1000);
             if ($(':radio[id="r1"]:checked').val()) {
@@ -218,6 +222,7 @@
                   $('#timer_0').backward_timer('reset')
               })
           </script>
+          <script src="aleatoire.js"></script>
   </body>
 </html>
 
