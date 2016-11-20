@@ -123,3 +123,19 @@ input {
 fieldset{
     border: 0;
 }
+
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    background: #fef6ff; /* Just to visualize the extent */
+    visibility: hidden;
+
+}
+
+.text-head{
+    text-align: center;
+}

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Questionnaire interactif en jQuery</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
+      <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+      <script src="bootstrap/js/bootstrap.min.js"></script>
 
   <script type="text/javascript">
       function getScore(formulaire) 
@@ -27,12 +29,40 @@
         }
         document.getElementById('score').innerHTML = score;
       } 
-    </script> 
+    </script>
+
+      <script>
+          $(document).ready(function(){
+              $("#hide").click(function(){
+                  $(".fullscreen").hide();
+              });
+          });
+      </script>
 
   </head>
   
   <body>
-	
+  <div class="fullscreen">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12 text-head">
+                <h1>Séléction du personnage</h1>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-4">
+                  <img class="img-responsive" src="question.png" />
+              </div>
+              <div class="col-md-4">
+                  <img class="img-responsive" src="mauvais.png" />
+              </div>
+              <div class="col-md-4">
+                  <img class="img-responsive" src="bon.png" />
+              </div>
+              <button id="hide">Hide</button>
+          </div>
+      </div>
+  </div>
     <form>
     <div class="question">
       <div class="texte">
@@ -95,8 +125,9 @@
     </div>
     
     </form>
-	<center><button value="Score" onclick="getScore(this.form)" id="button" class="btn">Réponses</button></center>
+	<center><button value="Score" name="startstop" onclick="getScore(this.form); chronoStart()" id="button" class="btn">Réponses</button></center>
   <br>
+
   <center>Votre score est : <span id="score"></span><center>
     
     <script src="jquery.js"></script>
