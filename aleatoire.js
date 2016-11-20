@@ -31,7 +31,7 @@ function aleatoire_01() {
     	$('#r4').hide();
     }
 
-    $('#q1_50').hide();
+    $('.q1_50').hide();
 }
 
 function aleatoire_02() {
@@ -67,7 +67,7 @@ function aleatoire_02() {
     	$('#r8').hide();
     }
 
-    $('#q1_50').hide();
+    $('.q1_50').hide();
 }
 
 function aleatoire_03() {
@@ -103,7 +103,7 @@ function aleatoire_03() {
     	$('#r12').hide();
     }
 
-    $('#q1_50').hide();
+    $('.q1_50').hide();
 }
 
 function aleatoire_04() {
@@ -139,5 +139,5 @@ function aleatoire_04() {
     	$('#r16').hide();
     }
 
-    $('#q1_50').hide();
+    $('.q1_50').hide();
 }
