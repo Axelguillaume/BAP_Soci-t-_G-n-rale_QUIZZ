@@ -113,13 +113,13 @@ function aleatoire_04() {
     var y =0;
 
     x = Math.floor((Math.random() * 4) +1);
-    while (x == 1) {
+    while (x == 3) {
     	x = Math.floor((Math.random() * 4) +1);
     }
     nombre_aleatoire_1 = x;
 
     y = Math.floor((Math.random() * 4) +1);
-    while (y == 1 || y == nombre_aleatoire_1) {
+    while (y == 3 || y == nombre_aleatoire_1) {
     	y = Math.floor((Math.random() * 4) +1);
     }
     nombre_aleatoire_2 = y;
